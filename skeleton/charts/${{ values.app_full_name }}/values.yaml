@@ -1,6 +1,6 @@
 python:
   applicationPort: ${{ values.http_port }}
-  image: '${{ values.acr_registry }}.azurecr.io/${{ values.product }}/${{ values.component }}:latest'
+  image: '${{ values.acr_registry }}/${{ values.product }}/${{ values.component }}:latest'
   ingressHost: ${{ values.product }}-${{ values.component }}-{% raw %}{{ .Values.global.environment }}.service.core-compute-{{ .Values.global.environment }}.internal{% endraw %}
   environment:
   # keyVaults:

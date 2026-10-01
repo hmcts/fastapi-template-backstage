@@ -9,4 +9,4 @@ maintainers:
 dependencies:
   - name: python
     version: 0.1.0
-    repository: 'oci://${{ values.acr_registry }}.azurecr.io/helm'
+    repository: 'oci://${{ values.acr_registry }}/helm'
